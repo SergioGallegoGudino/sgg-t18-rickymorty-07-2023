@@ -8,6 +8,9 @@ import { PersonajesService } from 'src/app/personajes.service';
   styleUrls: ['./add-personajes.component.css']
 })
 export class AddPersonajesComponent {
+
+  // Creamos un objeto de tipo Personaje con todos sus atributos
+
   personaje: Personaje = {
     id: "",
     name: "",
@@ -22,6 +25,8 @@ export class AddPersonajesComponent {
     url: "",
     created: ""
   };
+
+  // Pasamos por el constructor personajeService
 
   constructor(private personajesService: PersonajesService){}
 
