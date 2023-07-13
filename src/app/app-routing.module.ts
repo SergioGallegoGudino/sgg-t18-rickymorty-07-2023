@@ -7,7 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { DetallesComponent } from './home/personajes/detalles/detalles.component';
 import { AddPersonajesComponent } from './home/personajes/add-personajes/add-personajes.component';
-
+// Creamos las rutas de la aplicación
 const routes: Routes = [
   {
     path: `` ,

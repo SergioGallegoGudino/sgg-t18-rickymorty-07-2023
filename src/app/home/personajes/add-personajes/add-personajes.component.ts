@@ -30,14 +30,17 @@ export class AddPersonajesComponent {
 
   constructor(private personajesService: PersonajesService){}
 
+  // Creamos un método que añada un personaje a partir de los atributos id, name, status y species
+
   addPersonaje(): void{
+    // Creamos una variable con los datos del formulario asignados a cada atributo
     const data = {
       id: this.personaje.id,
       name: this.personaje.name,
       status: this.personaje.status,
       species: this.personaje.species
     };
-
+    // Llamamos a la función create del service y esperamos una respuesta
     this.personajesService.create(data)
       .subscribe(
         response =>{
